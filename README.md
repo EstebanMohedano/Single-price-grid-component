@@ -1,6 +1,6 @@
 # Frontend Mentor - Single Price Grid Component
 
-[ver](https://estebanmohedano.github.io/Single-price-grid-component/)
+[Ver mi ejercicio resuelto](https://estebanmohedano.github.io/Single-price-grid-component/)
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
