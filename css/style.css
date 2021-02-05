@@ -1,0 +1,111 @@
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);    
+    --fondo1:#2bb3b1;
+    --fondo2:#4abebd;
+}
+
+body{
+    box-sizing: border-box;    
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction:column;  
+    margin :30px;
+    background: #e6eff6;     
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.header{
+    display: block;
+    background-color:white;
+    height: 210px;
+    padding: 0 30px 30px 30px;
+    border-radius:7px 7px 0 0;
+}
+
+.header__title{
+    color:var(--cyan);
+    font-weight: 700;
+    font-size:1.35rem;
+}
+
+.header__subtitle{
+    color:var(--bright-yellow);
+    font-weight: 700;
+    font-size:1rem;
+}
+
+.header__p{
+    color:var(--grayish-blue);
+    font-size:0.8rem;
+    line-height: 2;
+}
+.lefttop{    
+    display: block;
+    background: var(--fondo1);
+    height: 185px;
+    padding: 30px;
+    font-size:1.5rem;
+    font-weight: 700;
+    color:white;    
+}
+.lefttop__currency {    
+    display: flex;
+    text-align:center;     
+    font-weight: 700;
+    font-size:2rem;
+    margin: 15px 0;
+}
+.lefttop__currency span {      
+    font-weight: 400;
+    font-size:1rem;
+    margin:10px;
+    color:rgba(255,255,255,0.6);
+    
+}
+.lefttop__p {    
+    font-size:1rem;
+    color:rgba(255,255,255,0.7);
+    margin: 15px 0;
+    
+}
+.lefttop__boton {    
+    margin-top: 25px;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;    
+    
+}
+
+.lefttop__boton a{    
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+    height:50px;    
+    text-decoration: none;
+    font-size:1rem;
+    color:white;
+}
+.rightbottom{    
+    display: block;
+    background: var(--fondo2);
+    height: 200px;
+    padding: 30px;
+    color:white;
+    border-radius:0 0 7px 7px;
+}
+.rightbottom__title{    
+    font-size:1.4rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.rightbottom__p{    
+    font-size:0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:rgba(255,255,255,0.7);
+}
