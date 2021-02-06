@@ -22,7 +22,7 @@ body{
 .header{
     display: block;
     background-color:white;
-    height: 210px;
+    height: 210px;    
     padding: 0 30px 30px 30px;
     border-radius:7px 7px 0 0;
 }
@@ -47,15 +47,14 @@ body{
 .lefttop{    
     display: block;
     background: var(--fondo1);
-    height: 185px;
+    height: 185px;    
     padding: 30px;
     font-size:1.5rem;
     font-weight: 700;
     color:white;    
 }
 .lefttop__currency {    
-    display: flex;
-    text-align:center;     
+    display: flex;    
     font-weight: 700;
     font-size:2rem;
     margin: 15px 0;
@@ -70,14 +69,12 @@ body{
 .lefttop__p {    
     font-size:1rem;
     color:rgba(255,255,255,0.7);
-    margin: 15px 0;
-    
+    margin: 15px 0;    
 }
 .lefttop__boton {    
     margin-top: 25px;
     background-color: var(--bright-yellow);
-    border-radius: 5px;    
-    
+    border-radius: 5px;     
 }
 
 .lefttop__boton a{    
@@ -107,5 +104,68 @@ body{
     font-size:0.9rem;
     font-weight: 400;
     line-height: 1.5;
-    color:rgba(255,255,255,0.7);
+    color:rgba(255,255,255,0.7);    
+}
+
+@media screen and (min-width:1440px) {
+    body{        
+        display: flex;                
+        justify-content: center;        
+        margin-left: auto;
+        margin-right: auto;
+        font-size:2rem;
+        max-width: 50%;
+        height: 100vh;       
+    }
+    .container{                
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "header header"
+            "leftbottom  rightbottom";
+        width: 100%;
+    }
+    .header{
+        grid-area: header;
+        font-size:1.8rem;
+        height: 200px;
+        width:100%;
+    }
+    .header__title,
+    .lefttop__title,
+    .rightbottom__title{        
+        font-size:1.8rem;
+    }
+
+    .header__subtitle{
+        font-size:1.4rem;
+    }
+
+    .header__p,
+    .lefttop__p,
+    .rightbottom__p{        
+        font-size:1.2rem;
+    }
+
+    .lefttop{
+        grid-area: leftbottom;
+        height: 250px;
+        border-radius:0 0 0 7px;
+    }
+
+    .lefttop__boton {
+        margin-top: 50px;
+    }
+
+    .lefttop__boton a{            
+        height:60px;    
+        font-size:1.6rem;
+    }
+
+    .rightbottom{    
+        width:100%;
+        height: 250px;
+        border-radius:0 0 7px 0;
+    }    
 }
